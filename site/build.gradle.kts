@@ -61,6 +61,7 @@ kotlin {
 }
 
 dependencies {
+    add("kspJvm", platform(libs.komapper.platform))
     add("kspJvm", "org.komapper:komapper-processor")
 }
 
