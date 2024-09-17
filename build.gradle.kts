@@ -1,3 +1,13 @@
+plugins {
+    alias(libs.plugins.dotenv).apply(true)
+}
+
+buildscript {
+    dependencies {
+        classpath("org.postgresql:postgresql:42.3.4")
+    }
+}
+
 subprojects {
     repositories {
         mavenCentral()
